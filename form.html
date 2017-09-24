@@ -23,12 +23,12 @@
       <form class="form" method="post">
         <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <fieldset class="form__fieldset form-full-name">
-          <label class="form__label">ФАМИЛИЯ:</label>
-          <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию*">
-          <label class="form__label">ИМЯ:</label>
-          <input class="form__input" type="text" name="name" placeholder="Введите ваше имя *">
-          <label class="form__label">ОТЧЕСТВО:</label>
-          <input class="form__input" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+          <label class="form__label" for="surname">ФАМИЛИЯ:</label>
+          <input class="form__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
+          <label class="form__label" for="name">ИМЯ:</label>
+          <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя *">
+          <label class="form__label" for="middle-name">ОТЧЕСТВО:</label>
+          <input class="form__input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
         </fieldset>
         <fieldset class="form__fieldset form-achievements
 ">
@@ -42,7 +42,7 @@
         </fieldset>
         <fieldset class="form__fieldset form-contacts">
           <label class="form__label">Номер телефона<input class="form__input" type="tel" name="telephone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста"></label>
-          <label class="form__label">адрес почты<input class="form__input" type="email" name="email" placeholder="Введите почту *"></label>
+          <label class="form__label">Адрес почты<input class="form__input" type="email" name="email" placeholder="Введите почту *"></label>
         </fieldset>
         <fieldset class="form__fieldset form-application
 s">
@@ -61,7 +61,7 @@ s">
           <div class="pop-up__failure">
             <p class="pop-up__title">Что-то пошло не так!</p>
             <p class="pop-up__warning">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="pop-up__button button" type=button">ОК</button>
+            <button class="pop-up__button button" type="button">ОК</button>
           </div>
           <div class="pop-up__success">
             <p class="pop-up__title">Ваша заявка отправлена</p>
