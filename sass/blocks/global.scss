@@ -1,0 +1,36 @@
+$body-color: white;
+$default-font: "Open Sans", "Arial", sans-serif;
+$text-weight: 400;
+$text-color: #283645;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: $body-color;
+  font-family: $default-font;
+  font-weight: $text-weight;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}

@@ -8,37 +8,44 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="PINK"></a>
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">МЕНЮ</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">ГЛАВНАЯ</a></li>
-          <li class="main-nav__item"><a href="photo.html">ФОТОГРАФИИ</a></li>
-          <li class="main-nav__item"><a href="form.html">КОНКУРС</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">ГЛАВНАЯ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">ФОТОГРАФИИ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">КОНКУРС</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <section class="download">
-        <img class="download__image" src="http://placehold.it/150x100" width="150" height="100" alt="Взгляните на жизнь иначе!">
-        <a class="download__button" href="https://itunes.com">Скачать приложение</a>
+        <div class="download__header">
+          <h2 class="download__title visually-hidden">Взгляните на жизнь иначе!</h2>
+        </div>
         <ul class="download__list">
+          <a class="download__button" href="https://itunes.com">Скачать приложение</a>
           <li class="download__item">
-            <a class="download__link download__link--itunes" href="https://itunes.com">Скачать приложение в Itunes Store</a>
+            <a class="download__link download__link--itunes" href="https://itunes.com">Скачать приложение в Itunes Store
+              <img class="download_image" src="img/logo-apple.svg" alt="Apple" width="47" height="56">
+            </a>
           </li>
           <li class="download__item">
-            <a class="download__link download__link--android" href="https://android.com">Скачать приложение в Android Market</a>
+            <a class="download__link download__link--android" href="https://android.com">Скачать приложение в Android Market
+              <img class="download_image" src="img/logo-android.svg" alt="Android" width="43" height="47">
+            </a>
           </li>
           <li class="download__item">
-            <a class="download__link download__link--microsoft" href="https://microsoft.com">Скачать приложение в Microsoft Store</a>
+            <a class="download__link download__link--microsoft" href="https://microsoft.com">Скачать приложение в Microsoft Store
+              <img class="download_image" src="img/logo-microsoft.svg" alt="Microsoft" width="44" height="41">
+            </a>
           </li>
         </ul>
         <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="feauters">
-        <p class="feauters__intro">Устали от серости мегаполиса?</p>
-        <p class="feauters__slogan">Нам есть, что вам предложить</p>
+        <p class="feauters__intro">Устали от серости мегаполиса?<br>Нам есть, что вам предложить</p>
         <ul class="feauters__list">
           <li class="feauters__item feauters__item--mood">
             <h2 class="feauters__title">Поднимает настроение</h2>
@@ -52,14 +59,14 @@
             <h2 class="feauters__title">Заводит новых друзей</h2>
             <p class="feauters__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
+          <div class="feauters__iphone"></div>
         </ul>
-        <div class="feauters__iphone"></div>
       </section>
       <section class="review">
         <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="review__wrapper slider">
           <ul class="review__list slider__list">
-            <li class="review__item slider__item">
+            <li class="review__item reviews__item--active slider__item">
               <h3 class="review__author">Николай Петров</h3>
               <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
@@ -81,35 +88,41 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Тарифы</h2>
-        <div class="price__wrapper slider">
-          <ul class="price__list slider__list">
-            <li class="price__item price__item--base slider__item">
-              <p class="price_name">БАЗА</p>
+        <table class="price__table slider">
+          <tr class="price__string">
+            <td class="price__name">
+              <h3 class="price__title">БАЗА</h3>
               <p class="price__cost">1,99 USD</p>
-              <p class="price__filter">РОЗОВЫЙ ФИЛЬТР</p>
-              <p class="price__emotes">СМАЙЛИКИ</p>
-              <p class="price_comments">КОММЕНТАРИИ</p>
-            </li>
-            <li class="price__item price__item--standart slider-item">
-              <p class="price_name">СТАНДАРТ</p>
+            </td>
+            <td class="price__name price__name--hit price__name--active">
+              <h3 class="price__title">СТАНДАРТ</h3>
               <p class="price__cost">3,99 USD</p>
-              <p class="price__filter">РОЗОВЫЙ ФИЛЬТР</p>
-              <p class="price__emotes">СМАЙЛИКИ</p>
-              <p class="price_comments">КОММЕНТАРИИ</p>
-            </li>
-            <li class="price__item price__item--unlimited">
-              <p class="price_name">АНЛИМ</p>
+            </td>
+            <td class="price__name">
+              <h3 class="price__title">АНЛИМ</h3>
               <p class="price__cost">9,99 USD</p>
-              <p class="price__filter">РОЗОВЫЙ ФИЛЬТР</p>
-              <p class="price__emotes">СМАЙЛИКИ</p>
-              <p class="price_comments">КОММЕНТАРИИ</p>
-            </li>
-          </ul>
-          <div class="price__toggles slider__toggles">
+            </td>
+          </tr>
+          <tr class="price__string">
+            <td class="price__filter">РОЗОВЫЙ ФИЛЬТР</td>
+            <td class="price__filter">РОЗОВЫЙ ФИЛЬТР</td>
+            <td class="price__filter">РОЗОВЫЙ ФИЛЬТР</td>
+          </tr>
+          <tr class="price__string">
+            <td class="price__emotes">СМАЙЛИКИ</td>
+            <td class="price__emotes">СМАЙЛИКИ</td>
+            <td class="price__emotes">СМАЙЛИКИ</td>
+          </tr>
+          <tr class="price__string">
+            <td class="price__comments">КОММЕНТАРИИ</td>
+            <td class="price__comments">КОММЕНТАРИИ</td>
+            <td class="price__comments">КОММЕНТАРИИ</td>
+          </tr>
+        </table>
+        <div class="price__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
-          </div>
         </div>
       </section>
       <section class="contacts">

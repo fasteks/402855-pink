@@ -1,20 +1,30 @@
 .price {
+  background-color: #f2f2f2;
+  padding: 91px 20px 20px 20px;
+}
+
+.price__table {
 
 }
 
-.price__wrapper {
+.price__string {
 
 }
 
-.price__list {
-
-}
-
-.price__item {
+.price__title {
 
 }
 
 .price__name {
+  background-color: #283645;
+  border: 2px solid #283645;
+}
+
+.price__name--hit {
+
+}
+
+.price__name--active {
 
 }
 
@@ -37,16 +47,3 @@
 .price__toggles {
 
 }
-
-.price__item--base {
-
-}
-
-.price__item--standart {
-
-}
-
-.price__item--unlimited {
-
-}
-

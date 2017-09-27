@@ -1,4 +1,15 @@
 .download {
+  background-color: #1d2631;
+  color: white;
+}
+
+.download__header {
+  width: 700px;
+  height: 462px;
+  background: url("../img/iphone-hand-mobile@1x.png") 0% 100% no-repeat, url("../img/bg-back-mobile@1x.jpg");
+}
+
+.download__title {
 
 }
 
@@ -11,7 +22,8 @@
 }
 
 .download__list {
-
+  padding: 28px 20px;
+  list-style: none;
 }
 
 .download__item {
@@ -35,5 +47,6 @@
 }
 
 .download__description {
-
+  padding: 0 20px;
+  padding-bottom: 34px;
 }
