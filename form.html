@@ -28,11 +28,11 @@
       <form class="form" method="post">
         <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <fieldset class="form__fieldset form__fieldset--name">
-          <label class="form__label" for="surname">ФАМИЛИЯ:</label>
+          <label class="form__label form__label--name" for="surname">ФАМИЛИЯ:</label>
           <input class="form__text" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
-          <label class="form__label" for="name">ИМЯ:</label>
+          <label class="form__label form__label--name" for="name">ИМЯ:</label>
           <input class="form__text" type="text" id="name" name="name" placeholder="Введите ваше имя *">
-          <label class="form__label" for="middle-name">ОТЧЕСТВО:</label>
+          <label class="form__label form__label--name" for="middle-name">ОТЧЕСТВО:</label>
           <input class="form__text" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--achievements">
@@ -56,7 +56,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--emotion">
           <legend class="form__legend">Опишите свои эмоции</legend>
-          <input class="form__textarea" type="textarea" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях">
+          <textarea class="form__textarea" type="textarea" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="6"></textarea>
         </fieldset>
         <button class="form__button button" type="submit" formaction="https://echo.htmlacademy.ru">ОТПРАВИТЬ ФОРМУ</button>
         <p class="form__required">* — обязательные поля</p>
@@ -76,7 +76,7 @@
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="http://placehold.it/150x100">
+        <img class="page-footer__logo-image" src="../img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">

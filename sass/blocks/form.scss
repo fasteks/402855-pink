@@ -1,5 +1,8 @@
 .form {
-
+  padding-top: 33px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__description {
@@ -7,10 +10,27 @@
 }
 
 .form__fieldset {
-
+  padding: 20px 0;
+  border: none;
 }
 
 .form__fieldset--name {
+
+}
+
+.form__fieldset--achievements {
+  background-color: #f2f2f2;
+}
+
+.form__fieldset--contacts {
+
+}
+
+.form__fieldset--applications {
+  background-color: #f2f2f2;
+}
+
+.form__fieldset--emotion {
 
 }
 
@@ -18,12 +38,17 @@
 
 }
 
-.form__text {
+.form__label--name {
+  color: #d22856;
+}
 
+.form__text {
+  padding: 0 22px;
 }
 
 .form__legend {
-
+  line-height: 18px;
+  color: #d22856;
 }
 
 .form__checkbox {
@@ -31,11 +56,11 @@
 }
 
 .form__tel {
-
+  padding: 0 22px;
 }
 
 .form__email {
-
+  padding: 0 22px;
 }
 
 .form__radio {
@@ -43,7 +68,7 @@
 }
 
 .form__textarea {
-
+  padding: 0 22px;
 }
 
 .form__button {
@@ -55,21 +80,5 @@
 }
 
 .form__pop-up {
-
-}
-
-.form__fieldset--achievements {
-
-}
-
-.form__fieldset--contacts {
-
-}
-
-.form__fieldset--applications {
-
-}
-
-.form__fieldset--emotion {
 
 }
