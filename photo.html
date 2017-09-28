@@ -8,27 +8,36 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK"></a>
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">МЕНЮ</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="index.html">ГЛАВНАЯ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">ФОТОГРАФИИ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">КОНКУРС</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">ГЛАВНАЯ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">ФОТОГРАФИИ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">КОНКУРС</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <div class="gallery">
         <h1 class="gallery__title">Фотографии пользователей</h1>
-        <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+        <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
         <ul class="gallery__list">
-          <li class="gallery__item gallery__header">
-            <section class="gallery__picture">
+          <li class="gallery__item">
+            <section class="gallery__picture gallery__header">
               <span class="gallery__best">ПАНОРАМА ДНЯ</span>
               <a class="gallery__link" href="#">
-                <img class="gallery__image" src="http://placehold.it/150x100" width="150" height="100" alt="ПАНОРАМА ДНЯ">
+                <img class="gallery__image" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorama">
               </a>
             </section>
             <section class="gallery__text">
@@ -46,9 +55,7 @@
           </li>
           <li class="gallery__item">
             <section class="gallery__picture">
-              <a class="gallery__link" href="#">
-                <img class="gallery__image" src="http://placehold.it/150x100" width="150" height="100" alt="">
-              </a>
+              <a class="gallery__link" href="#"><img class="gallery__image" src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="car"></a>
             </section>
             <section class="gallery__text">
               <a class="gallery__author" href="#">Левон
@@ -66,7 +73,7 @@
           <li class="gallery__item ">
             <section class="gallery__picture">
               <a class="gallery__link" href="#">
-                <img class="gallery__image" src="http://placehold.it/150x100" width="150" height="100" alt="">
+                <img class="gallery__image" src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="drumset">
               </a>
             </section>
             <section class="gallery__text">
@@ -85,7 +92,7 @@
           <li class="gallery__item ">
             <section class="gallery__picture">
               <a class="gallery__link" href="#">
-                <img class="gallery__image" src="http://placehold.it/150x100" width="150" height="100" alt="">
+                <img class="gallery__image" src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="window">
               </a>
             </section>
             <section class="gallery__text">
@@ -104,7 +111,7 @@
           <li class="gallery__item">
             <section class="gallery__picture">
               <a class="gallery__link" href="#">
-                <img class="gallery__image" src="http://placehold.it/150x100" width="150" height="100" alt="">
+                <img class="gallery__image" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="fair">
               </a>
             </section>
             <section class="gallery__text">
@@ -123,7 +130,7 @@
           <li class="gallery__item">
             <section class="gallery__picture">
               <a class="gallery__link" href="#">
-                <img class="gallery__image" src="http://placehold.it/150x100" width="150" height="100" alt="">
+                <img class="gallery__image" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="pov">
               </a>
             </section>
             <section class="gallery__text">
@@ -142,7 +149,7 @@
           <li class="gallery__item">
             <section class="gallery__picture">
               <a class="gallery__link" href="#">
-                <img class="gallery__image" src="http://placehold.it/150x100" width="150" height="100" alt="">
+                <img class="gallery__image" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="wing">
               </a>
             </section>
             <section class="gallery__text">
@@ -164,6 +171,7 @@
         <p class="upload__description">Затмите их всех!<br>
         Выкладывайте все, что накопилось в телефоне!</p>
         <form class="upload__form" method="post">
+          <img class="upload__image" src="../img/photo-road-mobile@1x.jpg" width="280" height="374" alt="road">
           <input class="upload__photo" type="file" src="http://placehold.it/150x100" name="file">
           <label class="upload__tool upload__tool--active upload__crop">
             <input type="range" name="crop" min="1" max="100" step="1">
