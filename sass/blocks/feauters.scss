@@ -1,27 +1,39 @@
 .feauters {
-
+  line-height: 24px;
+  outline: 1px solid red;
 }
 
 .feauters__intro {
+  margin: 0;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 44px;
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
+  background: $body-color;
+}
+
+.feauters__gradient {
+  padding-bottom: 60px;
+  background-image: linear-gradient(-185deg, rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 75%, #f2f2f2 75%, #f2f2f2 100%);
 }
 
 .feauters__list {
   background-color: #f2f2f2;
   list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .feauters__item {
-
+  margin-bottom: 38px;
 }
 
 .feauters__title {
   margin: 0;
-  padding: 18px 20px;
+  margin-bottom: 16px;
+  text-align: center;
   color: black;
   font-size: 18px;
   font-weight: 700;
@@ -29,16 +41,14 @@
 
 .feauters__description {
   margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 18px;
   color: #283645;
   font-size: 14px;
   font-weight: 400;
+  text-align: center;
 }
 
 .feauters__item--mood {
-
+  padding-top: 48px;
 }
 
 .feauters__item--decorate {
@@ -50,10 +60,7 @@
 }
 
 .feauters__iphone {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 26px;
-  width: 157px;
+  width: 280px;
   height: 320px;
-  background: url("../img/iphone-screen-mobile@1x.png");
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat 50%;
 }
