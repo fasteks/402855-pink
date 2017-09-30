@@ -1,28 +1,62 @@
 .pop-up {
-  background-color: white;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  position: relative;
+  outline: none;
 }
 
 .pop-up__success {
-  background: linear-gradient(to bottom, white 50%, #f2f2f2 50%);
+  display: block;
+  position: absolute;
+  top: -1300px;
+  padding-top: 43px;
+  padding-bottom: 50px;
+  line-height: 24px;
+  text-align: center;
+  background-color: $body-color;
+  background: linear-gradient(to bottom, white 56%, #f2f2f2 56%);
+  border-top: 1px solid rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .pop-up__failure {
-
+  display: block;
+  position: absolute;
+  top: -820px;
+  padding-top: 43px;
+  padding-bottom: 50px;
+  line-height: 24px;
+  text-align: center;
+  background-color: $body-color;
+  border-top: 1px solid rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .pop-up__title {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 18px;
+  font-weight: 700;
   color: black;
-  padding-top: 43px;
 }
 
 .pop-up__warning {
   margin: 0;
+  margin-bottom: 42px;
   padding: 0;
-  padding-top: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $text-color;
+  background-color: $body-color;
 }
 
 .pop-up__button {
-  margin: 50px 0px;
+  margin: 0;
+}
+
+.pop-up__warning--success {
+  margin-bottom: 69px;
 }

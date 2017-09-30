@@ -1,10 +1,14 @@
 .button {
-  padding: 22px 68px;
-  text-transform: uppercase;
+  width: 100%;
+  padding: 16px 0;
+  text-align: center;
   font-size: 18px;
   font-weight: 700;
+  line-height: 30px;
   color: white;
+  text-transform: uppercase;
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
+  border-radius: 3px;
 }
 
