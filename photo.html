@@ -30,13 +30,15 @@
     </header>
     <main class="page-main">
       <div class="gallery">
-        <h1 class="gallery__title">Фотографии пользователей</h1>
-        <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+        <header class="page-main__header">
+          <h1 class="page-main__title--photo">Фотографии <br> пользователей</h1>
+        </header>
         <ul class="gallery__list">
+          <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
           <li class="gallery__item">
             <section class="gallery__picture gallery__header">
-              <span class="gallery__best">ПАНОРАМА ДНЯ</span>
               <a class="gallery__link" href="#">
+                <span class="gallery__best">ПАНОРАМА ДНЯ</span>
                 <img class="gallery__image" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorama">
               </a>
             </section>
@@ -172,15 +174,14 @@
         Выкладывайте все, что накопилось в телефоне!</p>
         <form class="upload__form" method="post">
           <img class="upload__image" src="../img/photo-road-mobile@1x.jpg" width="280" height="374" alt="road">
-          <input class="upload__photo" type="file" src="http://placehold.it/150x100" name="file">
           <label class="upload__tool upload__tool--active upload__crop">
-            <input type="range" name="crop" min="1" max="100" step="1">
+            <input class="upload__range upload__range--active" type="range" name="crop" min="1" max="100" step="1">
           </label>
           <label class="upload__tool upload__gradient">
-            <input type="range" name="gradient" min="1" max="100" step="1">
+            <input class="upload__range" type="range" name="gradient" min="1" max="100" step="1">
           </label>
           <label class="upload__tool upload__brightness">
-            <input type="range" name="brightness" min="1" max="100" step="1">
+            <input class="upload__range" type="range" name="brightness" min="1" max="100" step="1">
           </label>
           <div class="upload__buttons">
             <button class="upload__submit" type="submit" formaction="https://echo.htmlacademy.ru">Запостить</button>

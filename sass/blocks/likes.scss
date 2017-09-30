@@ -3,14 +3,20 @@
 }
 
 .likes__link {
-  line-height: 24px;
+  display: flex;
   font-size: 12px;
+  line-height: 14px;
   text-transform: uppercase;
-  color: #d22856;
+  color: $crimson;
 }
 
 .likes__heart {
-
+  width: 14px;
+  height: 14px;
+  margin-right: 18px;
+  font-size: 0;
+  background-color: #d22856;
+  background: url("../img/icon-heart.svg") no-repeat 0% 50%;
 }
 
 .likes__number {
