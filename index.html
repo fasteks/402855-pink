@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+        <img class="page-header__logo-mobile" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+        <svg class="page-header__logo--tablet" width="147" height="40"></svg>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">МЕНЮ</button>
@@ -31,9 +33,9 @@
     <main class="page-main">
       <section class="download">
         <div class="download__header">
-          <h2 class="download__title visually-hidden">Взгляните на жизнь иначе!</h2>
         </div>
         <ul class="download__list">
+          <h2 class="download__title">Взгляните на жизнь иначе!</h2>
           <a class="download__button" href="https://itunes.com">Скачать приложение</a>
           <li class="download__item">
             <a class="download__link download__link--itunes" href="https://itunes.com">Скачать приложение в Itunes Store
@@ -50,15 +52,15 @@
               <img class="download__image" src="img/logo-microsoft.svg" alt="Microsoft" width="44" height="41">
             </a>
           </li>
+          <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </ul>
-        <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="feauters">
         <p class="feauters__intro">
           Устали от серости мегаполиса?
         </p>
         <p class="feauters__intro feauters__gradient">
-          Нам есть, что вам предложить
+          Нам есть, что вам <br> предложить!
         </p>
         <ul class="feauters__list">
           <li class="feauters__item feauters__item--mood">
@@ -76,20 +78,28 @@
           <div class="feauters__iphone"></div>
         </ul>
       </section>
+      <section class="research">
+        <div class="research__logo"></div>
+        <div class="research__text">
+          <h2 class="research__heading">Эффект <br> на 24 часа!</h2>
+          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research__link">Узнать больше об исследовании</a>
+        </div>
+      </section>
       <section class="review">
         <div class="review__wrapper slider review__gradient">
           <h2 class="visually-hidden">Отзывы о нас</h2>
           <ul class="review__list slider__list">
             <li class="review__item reviews__item--active slider__item">
-              <h3 class="review__author">Николай Петров</h3>
+              <h3 class="review__author">Николай Петров<span class="review__info">25 лет, водитель трамвая</span></h3>
               <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="review__item slider__item">
-              <h3 class="review__author">Николай Петров</h3>
+              <h3 class="review__author">Николай Петров<span class="review__info">25 лет, водитель трамвая</span></h3>
               <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="review__item slider__item">
-              <h3 class="review__author">Николай Петров</h3>
+              <h3 class="review__author">Николай Петров<span class="review__info">25 лет, водитель трамвая</span></h3>
               <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>

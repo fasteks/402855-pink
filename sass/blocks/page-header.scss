@@ -1,16 +1,40 @@
 .page-header {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: -63px;
   background-color: #283645;
   outline: 3px solid green;
 }
 
 .page-header__logo {
+  display: block;
   padding-right: 20px;
   padding-left: 20px;
   line-height: 0;
+  font-size: 0;
 }
 
-.page-header__logo-image {
+.page-header__logo-mobile {
   padding: 22px 0;
+}
+
+.page-header__logo--tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 660px;
+    margin-bottom: -107px;
+  }
+
+  .page-header__logo-mobile {
+    display: none;
+  }
+
+  .page-header__logo--tablet {
+    display: block;
+    padding: 34px;
+    background: url("../img/logo-pink-blue-mobile.svg") no-repeat 50%;
+  }
 }
