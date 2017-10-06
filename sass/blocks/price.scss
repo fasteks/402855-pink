@@ -83,9 +83,19 @@
 @media (min-width: $tablet-width) {
   .price {
     width: 660px;
+    padding-bottom: 36px;
   }
 
   .price__table {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .price__name {
+    min-width: 156px;
+  }
+
+  .price__toggles {
+    display: none;
   }
 }
