@@ -1,4 +1,9 @@
 .upload {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   outline: 3px solid green;
 }
 
@@ -20,14 +25,21 @@
   margin-bottom: 40px;
 }
 
+.upload__tools-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+}
+
 .upload__tool {
   width: 44px;
   height: 44px;
+  margin-bottom: 39px;
   opacity: 0.3;
   background-color: #283645;
 
   &:last-of-type {
-    margin-bottom: 115px;
+    //margin-bottom: 115px;
   }
 }
 
@@ -38,10 +50,12 @@
 .upload__range {
   display: none;
   -webkit-appearance: none;
-  margin-left: -18px;
-  margin-top: 82px;
   width: 240px;
   height: 2px;
+  //margin-left: -18px;
+  //margin-top: 82px;
+  margin: 0 auto;
+  margin-bottom: 73px;
   background-color: black;
   outline: none;
 
@@ -58,6 +72,7 @@
 
 .upload__range--active {
   display: block;
+  order: 1;
 }
 
 .upload__crop {
@@ -82,10 +97,11 @@
 }
 
 .upload__buttons {
+  order: 2;
 }
 
 .upload__submit {
-  min-width: 280px;
+  width: 280px;
   padding: 15px 0;
   margin-bottom: 12px;
   font-size: 18px;
@@ -96,10 +112,11 @@
   background-color: $grey-bg;
   border: 3px solid $crimson;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 .upload__reset {
-  min-width: 280px;
+  width: 280px;
   padding: 15px 0;
   margin-bottom: 22px;
   font-size: 18px;
@@ -110,4 +127,83 @@
   border: 3px solid #283645;
   border-radius: 25px;
   opacity: 0.1;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .upload {
+    width: 660px;
+  }
+
+  br {
+    display: block;
+  }
+
+  .upload__description {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+  }
+
+  .upload__form {
+    width: 660px;
+    justify-content: space-between;
+    padding-bottom: 55px;
+  }
+
+  .upload__image {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+  }
+
+  .upload__tools-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
+
+  .upload__tool {
+    width: 24px;
+    height: 24px;
+    opacity: 0.3;
+    margin: 0;
+    margin-right: 28px;
+    margin-bottom: 51px;
+    opacity: 1;
+
+    &:last-of-type {
+      margin-bottom: 66px;
+    }
+  }
+
+  .upload__range--active {
+    order: 0;
+  }
+
+  .upload__range {
+    display: block;
+    width: 202px;
+    margin: 0;
+    margin-top: 11px;
+  }
+
+  .upload__buttons {
+    width: 260px;
+    height: 132px;
+  }
+
+  .upload__submit {
+    width: 260px;
+    margin-bottom: 25px;
+  }
+
+  .upload__reset {
+    width: 260px;
+    margin: 0;
+  }
 }

@@ -31,10 +31,10 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="gallery">
-        <header class="page-main__header">
+      <header class="page-main__header">
           <h1 class="page-main__title--photo">Фотографии <br> пользователей</h1>
         </header>
+      <div class="gallery">
         <ul class="gallery__list">
           <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
           <li class="gallery__item">
@@ -176,18 +176,17 @@
         Выкладывайте все, что накопилось в телефоне!</p>
         <form class="upload__form" method="post">
           <img class="upload__image" src="../img/photo-road-mobile@1x.jpg" width="280" height="374" alt="road">
-          <label class="upload__tool upload__tool--active upload__crop">
-            <input class="upload__range upload__range--active" type="range" name="crop" min="1" max="100" step="1">
-          </label>
-          <label class="upload__tool upload__gradient">
-            <input class="upload__range" type="range" name="gradient" min="1" max="100" step="1">
-          </label>
-          <label class="upload__tool upload__brightness">
-            <input class="upload__range" type="range" name="brightness" min="1" max="100" step="1">
-          </label>
-          <div class="upload__buttons">
-            <button class="upload__submit" type="submit" formaction="https://echo.htmlacademy.ru">Запостить</button>
-            <button class="upload__reset" type="reset">Отмена</button>
+          <div class="upload__tools-wrapper">
+            <label for="range-1" class="upload__tool upload__tool--active upload__crop"></label>
+            <input id="range-1" class="upload__range upload__range--active" type="range" name="crop" min="1" max="100" step="1">
+            <label for="range-2" class="upload__tool upload__gradient"></label>
+            <input id="range-2" class="upload__range" type="range" name="gradient" min="1" max="100" step="1">
+            <label for="range-3" class="upload__tool upload__brightness"></label>
+            <input id="range-3" class="upload__range" type="range" name="brightness" min="1" max="100" step="1">
+            <div class="upload__buttons">
+              <button class="upload__submit" type="submit" formaction="https://echo.htmlacademy.ru">Запостить</button>
+              <button class="upload__reset" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </div>

@@ -1,4 +1,7 @@
 .form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 320px;
   margin: 0 auto;
   padding-bottom: 17px;
@@ -236,9 +239,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 660px;
     padding-bottom: 7px;
   }
