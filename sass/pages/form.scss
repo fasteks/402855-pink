@@ -19,8 +19,8 @@
 }
 
 .form__fieldset {
-  display: flex;
-  min-width: 280px;
+  width: 280px;
+  margin: 0;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -29,27 +29,24 @@
 }
 
 .form__fieldset--name {
-  outline: 3px solid lime;
+
 }
 
 .form__fieldset--achievements {
   padding-bottom: 40px;
   background-color: #f2f2f2;
-  outline: 3px solid $crimson;
 }
 
 .form__fieldset--contacts {
-  outline: 3px solid yellow;
+
 }
 
 .form__fieldset--applications {
   padding-bottom: 40px;
   background-color: #f2f2f2;
-  outline: 3px solid blue;
 }
 
 .form__fieldset--emotion {
-  outline: 3px solid pink;
   margin-bottom: 48px;
 }
 
@@ -104,16 +101,12 @@
 }
 
 .form__label--contacts {
+  padding-left: 23px;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   color: $crimson;
-  margin-bottom: 25px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .form__text {
@@ -124,6 +117,7 @@
   font-weight: 400;
   line-height: 30px;
   box-sizing: border-box;
+  border: 2px solid #e5e5e5;
 
   &:last-child {
     margin-bottom: 0;
@@ -132,8 +126,12 @@
 
 .form__legend {
   width: 320px;
-  padding-top: 40px;
+  margin: 0;
+  margin-left: -20px;
+  margin-right: -20px;
   margin-bottom: 39px;
+  padding: 0;
+  padding-top: 40px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
@@ -150,6 +148,10 @@
   margin-bottom: 16px;
   line-height: 30px;
   background: $body-color;
+}
+
+.form__legend__contacts {
+  display: none;
 }
 
 .form__label--radio {
@@ -220,5 +222,230 @@
 }
 
 .form__pop-up {
-  outline: 3px solid olive;
+
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 660px;
+    padding-bottom: 7px;
+  }
+
+  .form__description {
+    margin: 0 auto;
+    padding-right: 60px;
+    padding-left: 60px;
+    font-size: 18px;
+  }
+
+  .form__request {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    padding-right: 60px;
+    padding-left: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $text-color;
+    text-align: center;
+  }
+
+  .form__fieldset {
+    width: 620px;
+    margin-bottom: 60px;
+  }
+
+  .form__legend {
+    width: auto;
+  }
+
+  .form__fieldset--name {
+    order: 1;
+  }
+
+  .form__fieldset-wrapper--name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .form__label--name {
+    padding: 0;
+    margin-right: 17px;
+  }
+
+  .form__text {
+    width: 525px;
+    margin-bottom: 52px;
+    flex-grow: 1;
+  }
+
+  .form__fieldset--applications {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    padding-bottom: 5px;
+    background-color: $body-color;
+    border: 2px solid #e5e5e5;
+    order: 2;
+    box-sizing: border-box;
+  }
+
+  .form__fieldset-wrapper--application {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 45px 65px;
+  }
+
+  .form__legend--application {
+    margin: 0;
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    line-height: 30px;
+    background-color: $body-color;
+  }
+
+  br {
+    display: none;
+  }
+
+  .form__legend--contacts {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    line-height: 30px;
+    background-color: $body-color;
+  }
+
+  .form__fieldset--contacts {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: $body-color;
+    border: 2px solid #e5e5e5;
+    order: 3;
+    box-sizing: border-box;
+  }
+
+  .form__fieldset-wrapper--contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px 58px;
+  }
+
+  .form__label--contacts {
+    position: relative;
+    padding-right: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -60px;
+      right: 3px;
+      background-color: #e5e5e5;
+      background-image: url("../img/mail.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &:nth-of-type(1) {
+      order: 0;
+      margin-bottom: 38px;
+
+      &::after {
+        background-image: url("../img/phone.png");
+      }
+    }
+
+    &:nth-of-type(2) {
+      order: 1;
+    }
+  }
+
+  .form__text--contacts {
+    width: 437px;
+
+    &:nth-child(1) {
+      order: -1;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+      order: -1;
+    }
+  }
+
+  .form__fieldset--achievements {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: $body-color;
+    border: 2px solid #e5e5e5;
+    order: 4;
+    box-sizing: border-box;
+  }
+
+  .form__legend--achievements {
+    margin: 0;
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    line-height: 30px;
+    background-color: $body-color;
+  }
+
+  .form__fieldset-wrapper--achievements {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px 58px;
+  }
+
+ .form__fieldset--emotion {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 67px;
+    padding: 0;
+    padding-bottom: 51px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: $body-color;
+    border: 2px solid #e5e5e5;
+    order: 5;
+    box-sizing: border-box;
+  }
+
+  .form__legend--emotion {
+    margin: 0;
+    margin-bottom: 37px;
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    line-height: 30px;
+    background-color: $body-color;
+  }
+
+  .form__button {
+    width: 300px;
+    margin-left: 20px;
+    order: 6;
+  }
+
+  .form__required {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    order: 7;
+  }
 }

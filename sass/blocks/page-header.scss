@@ -3,7 +3,6 @@
   margin: 0 auto;
   margin-bottom: -63px;
   background-color: #283645;
-  outline: 3px solid green;
 }
 
 .page-header__logo {
@@ -26,6 +25,10 @@
   .page-header {
     width: 660px;
     margin-bottom: -107px;
+  }
+
+  .page-header--form {
+    margin-bottom: -125px;
   }
 
   .page-header__logo-mobile {

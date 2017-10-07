@@ -1,4 +1,6 @@
 .page-footer {
+  width: 320px;
+  margin: 0 auto;
   margin-top: 42px;
   padding: 0 20px;
   outline: 3px solid orange;
@@ -27,7 +29,7 @@
 }
 
 @media (min-width: 240px) {
-  .page-footer {
+  .page-footer--index {
     display: none;
   }
 }
