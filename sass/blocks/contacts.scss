@@ -77,3 +77,40 @@
     background-position: 50% 70%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 940px;
+  }
+
+  .contacts__intro {
+    width: 640px;
+    order: 1;
+  }
+
+  .contacts__item {
+    width: 280px;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(3) {
+      order: 4;
+    }
+
+    &:nth-child(4) {
+      order: 3;
+    }
+  }
+
+  .contacts__map {
+    width: 980px;
+    height: 487px;
+    margin: 0 -10px;
+    order: 5;
+    background-image: url("../img/index-map-marker-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+  }
+}

@@ -1,7 +1,6 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
-  //margin-bottom: -63px;
   margin-bottom: -85px;
   background-color: #283645;
 }
@@ -36,5 +35,25 @@
     display: block;
     padding: 34px;
     background: url("../img/logo-pink-blue-mobile.svg") no-repeat 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+
+  .page-header__logo {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .page-header__logo--tablet {
+    padding: 0;
   }
 }

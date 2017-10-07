@@ -116,3 +116,13 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feauters {
+    width: 940px;
+  }
+
+  .feauters__list {
+
+  }
+}

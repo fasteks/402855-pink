@@ -50,3 +50,16 @@
     text-decoration: underline;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .research {
+    width: 940px;
+    margin-bottom: 190px;
+    padding: 0;
+    background-color: $grey-bg;
+  }
+
+  .research__logo {
+    background-color: $grey-bg;
+  }
+}
