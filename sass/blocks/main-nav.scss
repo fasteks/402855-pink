@@ -45,7 +45,6 @@
     display: flex;
     margin: 0;
     padding: 0;
-    background-color: transparent;
   }
 
   .main-nav__toggle {
@@ -55,15 +54,13 @@
   .main-nav__list {
     display: flex;
     justify-content: space-between;
-    width: 660px;
-    background-color: transparent;
+    flex-wrap: wrap;
+    min-width: 660px;
   }
 
   .main-nav__item {
+    align-item: center;
     background-color: transparent;
-  }
-
-  .main-nav__link {
-    background-color: transparent;
+    box-shadow: none;
   }
 }

@@ -35,8 +35,7 @@
         <h1 class="page-main__title--form">Конкурс на самое безбашенное <br> путешествие с Пинк</h1>
       </header>
       <form class="form" method="post">
-        <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <p class="form__request">Пожалуйста, заполните форму ниже:</p>
+        <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="form__request">Пожалуйста, заполните форму ниже:</span></p>
         <fieldset class="form__fieldset form__fieldset--name">
           <div class="form__fieldset-wrapper--name">
             <label class="form__label form__label--name" for="surname">ФАМИЛИЯ:</label>
@@ -70,7 +69,7 @@
             <label class="form__label form__label--contacts" for="tel">Номер телефона</label>
             <input class="form__text form__text--contacts" type="tel" id="tel" name="telephone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
             <label class="form__label form__label--contacts" for="email">Адрес почты</label>
-            <input class="form__text form__text--contacts" id="emai"type="email" name="email" placeholder="Введите почту *">
+            <input class="form__text form__text--contacts" id="email"type="email" name="email" placeholder="Введите почту *">
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--applications">
@@ -89,7 +88,7 @@
           <textarea class="form__textarea" type="textarea" name="review" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
         </fieldset>
         <button class="form__button button" type="submit" formaction="https://echo.htmlacademy.ru">ОТПРАВИТЬ ФОРМУ</button>
-        <p class="form__required"><span class="form__required--highlights">*</span> — обязательные поля</p>
+        <p class="form__required"><span class="form__required--highlights">*</span> — обязательные <span class="form__required--clarify">для заполнения</span> поля</p>
         <section class="form__pop-u op-up">
           <div class="pop-up__failure">
             <p class="pop-up__title">Что-то пошло не так!</p>
