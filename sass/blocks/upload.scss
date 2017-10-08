@@ -207,3 +207,40 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .upload {
+    width: 940px;
+    margin-bottom: 63px;
+  }
+
+  .upload__description {
+    font-size: 18px;
+  }
+
+  .upload__form {
+    width: 940px;
+    padding-top: 56px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .upload__tools-wrapper {
+    width: 410px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .upload__buttons {
+    width: 410px;
+  }
+
+  .upload__submit {
+    width: 183px;
+    margin-right: 40px;
+  }
+
+  .upload__reset {
+    width: 183px;
+  }
+}
