@@ -1,24 +1,34 @@
 .feauters {
-  width: 320px;
-  margin: 0 auto;
+  //width: 320px;
+  //margin: 0 auto;
   line-height: 24px;
   outline: 1px solid red;
+  padding-top: 43px;
+  /*
+  background-color: white;
+  background-image: linear-gradient(-15deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 65%, #f2f2f2 65%, #f2f2f2 100%);
+  */
+
+  background-color: #f2f2f2;
+  background-image: linear-gradient(-5deg, #f2f2f2 0%, #f2f2f2 75%, white 75%, white 100%);
 }
 
 .feauters__intro {
-  margin: 0;
+  margin: 0 auto;
+  width: 320px;
   padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  background: $body-color;
+  //background: $body-color;
 }
+
 
 .feauters__gradient {
   padding-bottom: 60px;
-  background-image: linear-gradient(-185deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 75%, #f2f2f2 75%, #f2f2f2 100%);
+  //background-image: linear-gradient(-185deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 65%, #f2f2f2 65%, #f2f2f2 100%);
 }
 
 .feauters__list {
@@ -26,7 +36,7 @@
   padding-left: 20px;
   padding-right: 20px;
   list-style: none;
-  background-color: #f2f2f2;
+ // background-color: #f2f2f2;
 }
 
 .feauters__item {
@@ -61,15 +71,20 @@
 }
 
 .feauters__iphone {
-  width: 280px;
-  height: 320px;
-  background: url("../img/iphone-screen-mobile.png") no-repeat 50%;
+  margin: 0 auto;
+  //width: 280px;
+  //height: 320px;
+  width: 158px;
+  height: 277px;
+  background: url("../img/iphone-screen-mobile.png") no-repeat 50% 0%;
+  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {
   .feauters {
-    width: 660px;
-    margin-bottom: 60px;
+  width: 100%;
+    //width: 660px;
+    //margin-bottom: 60px;
   }
 
   .feauters__intro {
@@ -78,7 +93,7 @@
   }
 
   .feauters__gradient {
-    padding-bottom: 145px;
+    padding-bottom: 120px;
   }
 
   .feauters__list {
@@ -119,7 +134,12 @@
 
 @media (min-width: $desktop-width) {
   .feauters {
-    width: 940px;
+    //width: 940px;
+    width: 100%;
+  }
+
+  .feauters__gradient {
+    background-image: linear-gradient(-185deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 55%, #f2f2f2 55%, #f2f2f2 100%);
   }
 
   .feauters__list {

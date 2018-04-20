@@ -1,8 +1,15 @@
 .page-header {
-  width: 320px;
-  margin: 0 auto;
-  margin-bottom: -85px;
+  width: 100%;
+  position: relative;
+  //margin-bottom: -85px;
   background-color: #283645;
+}
+
+.page-header__wrapper {
+  margin: 0 auto;
+  min-height: 110px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__logo {
@@ -23,8 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 660px;
-    margin-bottom: -144px;
+    //margin-bottom: -144px;
   }
 
   .page-header__logo-mobile {
@@ -34,7 +40,7 @@
   .page-header__logo--tablet {
     display: block;
     padding: 34px;
-    background: url("../img/logo-pink-blue-mobile.svg") no-repeat 50%;
+    background: url("../img/logo-pink-blue-mobile.svg") 50% no-repeat;
   }
 }
 
@@ -43,10 +49,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 940px;
     min-height: 110px;
-    margin: 0 auto;
-    padding: 0 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    width: 940px;
   }
 
   .page-header__logo {
